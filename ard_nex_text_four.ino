@@ -378,6 +378,8 @@ void showAllNo()                                {     //--show all no Serial
   while (Serial1.available()) {
     Serial1.read();
   }
+
+  //--------------------------------------tea
   Serial1.print(humdat); Serial1.write(0xFF);  Serial1.write(0xFF);  Serial1.write(0xFF);
   while (Serial1.available())  {
     Serial1.read();
